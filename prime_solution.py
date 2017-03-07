@@ -8,14 +8,16 @@ def prime_num(n):
         return True
 print(prime_num)
 
-
-
-def prime_list(a):
+def prime_list(n):
     prime=[]
-    for n in range(2, n):
-        if prime_num (i):
-            prime.append(n)
-    return prime        
+    for k in range(2, n+1):
+        for j in range(1, n+1):
+            divisor = []
+            if k%j ==0:
+                divisor.append(j)
+                if len(divisor) == 2:
+                    print (divisor)
+                    
 
 
 
